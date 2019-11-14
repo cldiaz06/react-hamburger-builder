@@ -3,13 +3,11 @@ import classes from "./Navigationitems.module.css";
 
 import NavigationItem from "./NavigationItem/NavigationItem";
 
-const navigationitems = () => (
-  <ul className={classes.NavigationItems}>
-    <NavigationItem link="/" active={true}>
-      Burger Builder
-    </NavigationItem>
-    <NavigationItem link="/">Checkout</NavigationItem>
-  </ul>
+const navigationItems = () => (
+    <ul className={classes.NavigationItems}>
+        <NavigationItem link="/" active>Burger Builder</NavigationItem>
+        <NavigationItem link="/">Checkout</NavigationItem>
+    </ul>
 );
 
-export default navigationitems;
+export default navigationItems;
